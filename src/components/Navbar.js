@@ -8,7 +8,7 @@ const navbarStyle = {
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '1rem 2rem',
-  background: '#fff',
+  background: "#f7f5ee",
   boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
   position: 'sticky',
   top: 0,

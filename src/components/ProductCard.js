@@ -9,13 +9,28 @@ const ProductCard = ({ product }) => {
       textAlign: 'center',
       background: '#fff'
     }}>
-      <img
-        src={product.image}
-        alt={product.name}
-        style={{ width: '100%', height: '200px', objectFit: 'cover', borderRadius: '6px' }}
-      />
-      <h3>{product.name}</h3>
-      <p>₹{product.price}</p>
+      <div
+        style={{
+          width: '100%',
+          height: '220px',
+          overflow: 'hidden',
+          borderRadius: '6px',
+          marginBottom: '1rem'
+        }}
+      >
+        <img
+          src={`http://ecommercce.test/storage/${product.image}`}
+          alt={product.name}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            display: 'block'
+          }}
+        />
+      </div>
+      <h3 style={{ fontWeight: 'bold' }}>{product.name}</h3>
+      <p>₹{Number(product.price).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</p>
       <button style={{
         padding: '0.5rem 1rem',
         background: '#222',
@@ -31,3 +46,4 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+

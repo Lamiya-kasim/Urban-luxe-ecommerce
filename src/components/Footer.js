@@ -1,10 +1,10 @@
-// src/components/Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer style={{
-      background: "#f5f3ee",
+      background: "#f7f5ee",
       borderTop: "1px solid #e5e1da",
       padding: "2.5rem 0 1.5rem 0",
       marginTop: "3rem",
@@ -32,20 +32,20 @@ export default function Footer() {
         <div style={{ flex: "1 1 160px", minWidth: "160px" }}>
           <h4 style={{ fontWeight: 600, marginBottom: "1rem" }}>Shop</h4>
           <ul style={{ listStyle: "none", padding: 0, lineHeight: "2" }}>
-            <li><a href="/women" style={{ color: "#444", textDecoration: "none" }}>Women</a></li>
-            <li><a href="/men" style={{ color: "#444", textDecoration: "none" }}>Men</a></li>
-            <li><a href="/cart" style={{ color: "#444", textDecoration: "none" }}>Cart</a></li>
-            <li><a href="/account" style={{ color: "#444", textDecoration: "none" }}>Account</a></li>
+            <li><Link to="/women" style={{ color: "#444", textDecoration: "none" }}>Women</Link></li>
+            <li><Link to="/men" style={{ color: "#444", textDecoration: "none" }}>Men</Link></li>
+            <li><Link to="/cart" style={{ color: "#444", textDecoration: "none" }}>Cart</Link></li>
+            <li><Link to="/account" style={{ color: "#444", textDecoration: "none" }}>Account</Link></li>
           </ul>
         </div>
         {/* Info */}
         <div style={{ flex: "1 1 160px", minWidth: "160px" }}>
           <h4 style={{ fontWeight: 600, marginBottom: "1rem" }}>Info</h4>
           <ul style={{ listStyle: "none", padding: 0, lineHeight: "2" }}>
-            <li><a href="#" style={{ color: "#444", textDecoration: "none" }}>About Us</a></li>
-            <li><a href="#" style={{ color: "#444", textDecoration: "none" }}>Contact</a></li>
-            <li><a href="#" style={{ color: "#444", textDecoration: "none" }}>Shipping & Returns</a></li>
-            <li><a href="#" style={{ color: "#444", textDecoration: "none" }}>Privacy Policy</a></li>
+            <li><Link to="/about" style={{ color: "#444", textDecoration: "none" }}>About Us</Link></li>
+            <li><Link to="/contact" style={{ color: "#444", textDecoration: "none" }}>Contact</Link></li>
+            <li><Link to="/shipping-returns" style={{ color: "#444", textDecoration: "none" }}>Shipping & Returns</Link></li>
+            <li><Link to="/privacy-policy" style={{ color: "#444", textDecoration: "none" }}>Privacy Policy</Link></li>
           </ul>
         </div>
         {/* Newsletter & Social */}
