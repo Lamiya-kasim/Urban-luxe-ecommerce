@@ -5,12 +5,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import WomenPage from './pages/WomenPage';
 import MenPage from './pages/MenPage';
+import KidsPage from './pages/KidsPage'; // <-- ADD THIS LINE
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ShippingReturns from './pages/ShippingReturns';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ShoesPage from './pages/ShoesPage';
 
-// Placeholder components for Cart and Account (customize as needed)
 function CartPage() {
   return <h1 style={{ padding: "2rem", textAlign: "center" }}>Cart</h1>;
 }
@@ -27,6 +28,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/women" element={<WomenPage />} />
         <Route path="/men" element={<MenPage />} />
+        <Route path="/kids" element={<KidsPage />} /> {/* <-- ADD THIS LINE */}
+        <Route path="/footwear" element={<ShoesPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/account" element={<AccountPage />} />
         {/* Info pages */}
@@ -41,5 +44,3 @@ function App() {
 }
 
 export default App;
-
-
